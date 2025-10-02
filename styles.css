@@ -1,0 +1,136 @@
+/*general*/
+body
+{
+    font-family: Arial, Helvetica, sans-serif; /*fuente de todas las paginas*/
+    margin: 0;/*margenes*/
+    padding: 0; /*quitar relleno*/
+    background-color: rgb(60, 129, 219); /*color de fondo*/
+    color: #000000; /*coloe de texto*/
+
+}
+/*encabezado*/
+header
+{
+    text-align: center; /*centrar el texto*/
+    background-color: rgb(3, 1, 122);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    font-size: 20px; /*tamaño de texto*/
+    text-shadow: 2px 2px 5px #ecebeb; /*somra de texto para relieves*/
+}
+/*menu de navegacion*/
+nav
+{
+    display: flex; /*organizar el contenido*/
+    justify-content: space-between; /*alinea verticalmente*/
+    align-items: center; /*alinea verticalmente*/
+    background-color: rgb(4, 79, 139);
+    padding: 10px;
+}
+nav ul
+{
+    list-style: none;/*quitar viñetas*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /*espacio entre cada enlace*/
+
+}
+nav ul li{
+    display: inline;/*cada elemento se muestra en una linea*/
+}
+nav ul li a
+{
+    text-decoration: none; /*quitar subrayado*/
+    color: rgb(9, 20, 20);
+    font-weight: bold; /*texto en negritas*/
+    transition: color 0.3s;
+}
+nav ul li a:hover
+{
+    color: #c70a0a; /*cambio de color de cursor*/
+}
+nav form
+{
+    display: flex;
+    gap: 5px;
+}
+nav input[type="search"]
+{
+    padding: 5px;
+    border: none;/*borde none sin borde*/
+    border-radius: 5px;/*borde redondeado*/
+}
+nav input[type="submit"]
+{
+    background-color: #000;
+    color: rgb(247, 243, 243);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;/*cambiar cursor al pasar*/
+}
+nav input [type="submit"]:hover
+{
+    background-color: brown;
+}
+/*contenido principal*/
+main
+{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+article
+{
+    flex: 3;/*tres veces el espacio*/
+    background-color: lightgrey;
+    padding: 2.0px;
+    border: 0.5px solid #000;/*borde gris claro*/
+    border-radius: 8px;
+    color: #b7a5f5;
+}
+article h1{
+    text-align: center;
+    font-size: 24px;
+    color: bisque;
+}
+article h3
+{
+    color: #000;
+    margin: 15px;
+}
+/*barra lateral relacionado*/
+aside{
+    flex: 1;
+    background-color: lavenderblush;
+    padding: 1.5px;
+    border-radius: 8px solid #070606;
+}
+
+aside h2{
+    color: #070606;
+}
+aside ul{
+    list-style: disc;
+    color: #000;
+}
+aside ul li a:hover
+{
+    color: rgb(55, 12, 80);
+}
+ul{
+    color: bisque;
+}
+li a {
+    color: #c70a0a;
+}
+footer
+{
+    background-color: darkslateblue;
+    color: burlywood;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
